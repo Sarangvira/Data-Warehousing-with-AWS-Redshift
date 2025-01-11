@@ -8,4 +8,7 @@ This source of data will be useful in helping Sparkify reach some of its analyti
 
 ## Files
 create_tables.py is the python script that drops all tables and create all tables (including staging tables)
+
 sql_queries.py is the python file containing all SQL queries. It is called by create_tables.py and etl.py
+
+etl.py is the python script that loads data into staging tables, then load data into fact and dimension tables from staging tables
