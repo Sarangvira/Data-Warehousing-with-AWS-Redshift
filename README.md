@@ -12,3 +12,5 @@ create_tables.py is the python script that drops all tables and create all table
 sql_queries.py is the python file containing all SQL queries. It is called by create_tables.py and etl.py
 
 etl.py is the python script that loads data into staging tables, then load data into fact and dimension tables from staging tables
+
+redshift_cluster_setup.py sets up the redshift cluster and creates an IAM role for redshift to access other AWS services
