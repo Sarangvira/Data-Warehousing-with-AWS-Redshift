@@ -16,3 +16,9 @@ etl.py is the python script that loads data into staging tables, then load data 
 redshift_cluster_setup.py sets up the redshift cluster and creates an IAM role for redshift to access other AWS services
 
 redshift_cluster_teardown.py removes the redshift cluster and IAM role created
+
+## running the ETL pipeline
+
+First, create_tables.py --  to create the data tables using the schema design specified. If tables were created previously, they will be dropped and recreated.
+
+Next, etl.py -- to populate the data tables created.
